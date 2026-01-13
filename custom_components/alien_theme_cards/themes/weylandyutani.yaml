@@ -1,5 +1,10 @@
 # Weyland-Yutani Theme
 # Inspired by Alien's USCSS Nostromo and corporate typography
+#
+# FONTS: This theme uses the Thedus font family from the Alien films.
+# Fonts are loaded via /local/weylandyutani/fonts/alien-fonts.css (registered by the integration).
+# Fallback fonts (Orbitron, Audiowide) are included in all font-family declarations
+# to ensure graceful degradation if Thedus fonts fail to load.
 weylandyutani:
   # Primary colors - Terminal green aesthetic
   primary-color: '#00ff00'

@@ -30,6 +30,7 @@ DOMAIN = "alien_theme_cards"
 __version__ = "1.0.0"
 
 CARDS_URL = "/local/weylandyutani/mu-th-ur-6000-cards.js"
+FONTS_CSS_URL = "/local/weylandyutani/fonts/alien-fonts.css"
 
 # Define CONFIG_SCHEMA - this integration requires no configuration
 CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
@@ -109,8 +110,20 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
     _LOGGER.info("Themes installed to: %s", themes_dir)
     _LOGGER.info("Cards and fonts installed to: %s", www_weylandyutani_dir)
     
+    # Register the fonts CSS first to ensure fonts are available
+    _LOGGER.info("Registering fonts CSS: %s", FONTS_CSS_URL)
+    try:
+        frontend.add_extra_js_url(hass, FONTS_CSS_URL)
+        _LOGGER.info("Fonts CSS registered successfully")
+    except Exception as err:
+        _LOGGER.warning(
+            "Could not automatically register fonts CSS: %s. "
+            "Fonts may not display correctly.",
+            err
+        )
+    
     # Register the Lovelace resource
-    _LOGGER.info("Registering Lovelace resource: %s", CARDS_URL)
+    _LOGGER.info("Registering Lovelace cards: %s", CARDS_URL)
     
     # Note: Files in config/www/ are automatically served via /local/ by Home Assistant
     # The cards JavaScript file will self-register via window.customCards

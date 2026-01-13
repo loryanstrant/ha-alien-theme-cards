@@ -4,10 +4,16 @@
  * https://typesetinthefuture.com/2014/12/01/alien/
  * 
  * This stylesheet loads fonts used in the Alien film:
- * - Thedus: Authentic display font from the Alien movie
+ * - Thedus: Authentic display font from the Alien movie (licensed for desktop commercial use)
  * - Futura-like: Montserrat (modern geometric sans-serif)
  * - Eurostile-like: Orbitron (futuristic technical display)
  * - Terminal: IBM Plex Mono (monospace for terminal displays)
+ * 
+ * FONT LICENSING:
+ * - Thedus fonts: Licensed under Desktop Commercial Use License (see Desktop Commercial Use License.pdf)
+ * - Google Fonts (Audiowide, Orbitron, Montserrat, IBM Plex Mono, Rajdhani, Share Tech Mono):
+ *   Licensed under SIL Open Font License 1.1 - https://scripts.sil.org/OFL
+ *   These are open-source fonts served via Google Fonts CDN
  */
 
 /* Thedus - Authentic display font from Alien movie */
