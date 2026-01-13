@@ -1,0 +1,12 @@
+{
+  "domain": "alien_theme_cards",
+  "name": "Alien Theme & Cards",
+  "codeowners": ["@loryanstrant"],
+  "config_flow": false,
+  "dependencies": [],
+  "documentation": "https://github.com/loryanstrant/ha-alien-theme-cards",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/loryanstrant/ha-alien-theme-cards/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
