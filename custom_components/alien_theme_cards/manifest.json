@@ -7,6 +7,5 @@
   "documentation": "https://github.com/loryanstrant/ha-alien-theme-cards",
   "issue_tracker": "https://github.com/loryanstrant/ha-alien-theme-cards/issues",
   "requirements": [],
-  "homeassistant": "2023.1.0",
-  "version": "1.0.0"
+  "version": "0.1.0"
 }
